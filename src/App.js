@@ -1,4 +1,4 @@
-import { Route } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/Home'
 import MageDiscography from './pages/MageDiscography'
 import './App.css'
@@ -6,10 +6,16 @@ import './App.css'
 function App() {
   return (
     <div className="App">
-      <Route exact path="/" component={Home} />
-      <Route path="/magediscography" component={MageDiscography} />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/magediscography" element={<MageDiscography />} />
+      </Routes>
     </div>
   )
 }
 
 export default App
+
+/* <Link to="/magediscography">
+  <button type="click">Click me</button>
+</Link> */

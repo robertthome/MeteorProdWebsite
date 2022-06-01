@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/Home'
 import MageDiscography from './pages/MageDiscography'
+
 import './App.css'
 
 function App() {

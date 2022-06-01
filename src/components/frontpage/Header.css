@@ -1,12 +1,22 @@
 .hero_container {
   height: 30em;
   width: auto;
-  background-image: url(/src/assets/BMLogo.jpg);
-  background-size: 25%;
-
-  background-repeat: no-repeat;
   border: 2px blue solid;
   border-top: none;
   border-left: none;
   border-right: none;
+}
+
+.header {
+  color: white;
+}
+
+.main_title {
+  position: absolute;
+  white-space: nowrap;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  font-size: 7.5vw;
 }
